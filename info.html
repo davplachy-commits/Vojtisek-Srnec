@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Informace - Vojtěch Jelen Fanpage</title>
+<link rel="icon" type="image/png" href="assets/favicon-512.png">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #030e18;
+    background: linear-gradient(to bottom, #031820, #a04e0a);
+    min-height: 100vh;
+}
+
+.header-title {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-title span:nth-child(1){ color:red; }
+.header-title span:nth-child(2){ color:orange; }
+.header-title span:nth-child(3){ color:yellow; }
+.header-title span:nth-child(4){ color:green; }
+.header-title span:nth-child(5){ color:blue; }
+.header-title span:nth-child(6){ color:purple; }
+.header-title span:nth-child(7){ color:pink; }
+.header-title span:nth-child(8){ color:cyan; }
+.header-title span:nth-child(9){ color:lime; }
+.header-title span:nth-child(10){ color:magenta; }
+.header-title span:nth-child(11){ color:brown; }
+.header-title span:nth-child(12){ color:gold; }
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.menu-item { position: relative; }
+
+.menu-item > a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding:5px 10px;
+    display:block;
+}
+
+.menu-item > a:hover { color: rgb(255,136,0); }
+
+.submenu {
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: rgba(255,136,0,0.95);
+    min-width:180px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+.submenu a {
+    display:block;
+    padding:10px;
+    color:#030e18;
+    font-size:18px;
+}
+
+.submenu a:hover {
+    background-color:#ff7b00;
+    color:white;
+}
+
+.menu-item:hover .submenu { display:block; }
+
+nav a {
+    font-size:25px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#ff7b00;
+    font-weight:bold;
+}
+
+nav a:hover { color:white; }
+
+nav a.active {
+    color:white;
+    background-color:rgb(255,123,0);
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+h2, h3 {
+    color:#ff8800;
+    border-bottom:2px solid rgba(0,0,0,0.1);
+    padding-bottom:5px;
+    margin-top:30px;
+}
+
+p, ul, ol {
+    background-color: rgba(255,255,255,0.85);
+    padding:15px 20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    font-size:20px;
+}
+
+img {
+    max-width:600px;
+    display:block;
+    margin:30px auto;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff8800;
+    color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  border-top: 3px solid #ff8800;
+}
+
+footer a {
+  color: #ff8800;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#cornerImage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+    z-index: 1000;
+    pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header-title">
+<span>V</span><span>o</span><span>j</span><span>t</span><span>ě</span><span>c</span><span>h</span> 
+<span>J</span><span>e</span><span>l</span><span>e</span><span>n</span> 
+<span style="color:red;">F</span><span style="color:orange;">a</span><span style="color:yellow;">n</span>
+<span style="color:green;">p</span><span style="color:rgb(255, 123, 0);">a</span><span style="color:purple;">g</span><span style="color:pink;">e</span>
+</div>
+
+<nav>
+    <div class="menu-item">
+        <a href="index.html">Domů</a>
+    </div>
+
+    <div class="menu-item">
+        <a href="info.html" class="active">Informace</a>
+        <div class="submenu">
+            <a href="#zivot">Život</a>
+            <a href="#kariera">Kariéra</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <a href="fotky.html">Fotky</a>
+    </div>
+
+    <div class="menu-item">
+        <a href="citaty.html">Citáty</a>
+    </div>
+</nav>
+
+<h2 id="tragedie">Tragédie Vojtěchova dosavadního života (To se fakt stalo trust)</h2>
+
+<ul>
+    Pro jeho neštěstí, Vojtěch byl nucen většinu svého života bydlet v oblasti velmi blízko Ostravy. Podle tohoto faktu lze usoudit, že měl velmi těžké dětství a že mu z toho kouře pravděpodobně odešla jedna plíce. Údajně většinu svého dětství strávil v ostravských dolech díky nízkému počtu vzdělaných lidí ve Slezsku. Z jeho těžké práce si pravděpodobně vydělal na svůj první počítač, se kterým našel i svou první a jedinou lásku, Skyrim. Díky jeho nově nalezené lásce, které věnoval stovky hodin, se začal nevědomky učit angličtinu, ve které se časem zlepšoval. Bohužel, kvůli jeho nadměrnému hraní Skyrimu už nedosahoval povinné kvantity vytěženého uhlí na osobu, a tak ho nechali deportovat do Mostu. Po jeho deportaci se ocitl v neznámém městě, bez peněz a bez přátel. Ve své zoufalosti se připojil k chánovské mafii. Ze začátku zastával pouze pozici ochranky, ale jak šel čas, vypracoval se až na pozici hlavního gádža. Brzy nato ho jeho lidé zradili a vyhostili z Ústeckého kraje. Zrazen jeho lidmi, městem a osudem, napadlo ho použít jeho získané znalosti angličtiny, které nabyl při dlouhém hraní Skyrimu, k dobru. Vydal se učit na střední školu na Vysočanech, <a href="https://www.ssemi.cz/">Novovysočanskou</a>. Zde se mu podařilo uchytit a získat dostatečný plat 40 tisíc, aby si mohl pronajmout byt na Černém Mostě. Zde bydlel s lokálním černochem Mikulášem.</ul>
+
+<img src="assets/d12ae645-8880-4a81-a054-28ee87593ce1.jpg">
+
+<h2 id="zaliby">Jelenovi záliby</h2>
+
+<ul>
+    Podle nejnovějších informací se Jelen zajímá o zimní sporty. Většinou tyto sporty sleduje online a sedí při tom na prdeli, avšak někdy udělá výjimku a jde si sednout na prdel do hospody blízko jeho rodné vísky ve Slezsku. Zároveň byl také viděn v pražském baru, který pustošil od 7. hodiny večer. Podle přítomných svědků se pokusil promluvit s tamní gothickou ženou, která ho ale odmítla. Podle kamerových záznamů se ráno v 6 hodin začal vracet domů. Bylo však vidět, že při tom ronil slzy, pravděpodobně kvůli zmíněné gothické ženě. Pokusili jsme se zeptat Jelena na důvod jeho slz, on však vše popřel. Můžeme předpokládat, že byl pod tak velkým vlivem alkoholu, že si danou noc ani nepamatoval.
+</ul>
+
+<img src="assets/62bc73b1-90a0-447b-a3a9-7741745f6e40-removebg-preview.png">
+
+<h1>Povinné tabulky</h1>
+
+<h2>Jelenův výdělek</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Týdny</th>
+      <th>Počet hodin</th>
+      <th>Výdělek za hodinut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lichý</td>
+      <td>23</td>
+      <td>430Kč</td>
+    </tr>
+    <tr>
+      <td>Sudý</td>
+      <td>23</td>
+      <td>430Kč</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Oblíbenost mezi Peškem a Plachým</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Jména</th>
+      <th>Míra vyrušování</th>
+      <th>Zhodnocení</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pešek</td>
+      <td>Velmi Vysoká</td>
+      <td>Kohout a míče trýznění</td>
+    </tr>
+    <tr>
+      <td>Plachý</td>
+      <td>Nízká (myslim)</td>
+      <td>(Sample rating)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Povinná videa</h1>
+
+<iframe width="640" height="360" src="https://www.youtube.com/watch?v=JSRtYpNRoN0"></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/watch?v=LVbYLv3x5og"></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/watch?v=-vmWkBK9BwA"></iframe>
+
+<footer>
+  <a href="https://www.ssemi.cz/" target="_blank">Stránky Školy</a>
+  <a href="https://www.okd.cz/cs" target="_blank">Těžební společnost</a>
+  <a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">Skyrim</a>
+  <a href="https://cs.wikipedia.org/wiki/S%C3%ADdli%C5%A1t%C4%9B_Chanov" target="_blank">Území Chánovské mafie</a>
+  <a href="https://s.team/p/cqcw-dcrf/BNWNKNKW" target="_blank">Sem vložte kopii Skyrimu</a>
+</footer>
+
+<img src="assets/Weedek.webp" alt="Weedek" id="cornerImage">
+
+</body>
+</html>
